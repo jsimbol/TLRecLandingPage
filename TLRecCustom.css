@@ -197,7 +197,6 @@
     margin:auto;
     height:50px;
     width:100%;
-    background-color:#000000;
   }
 
   div#mktHeader {position:relative;  height: 50px; }
@@ -688,3 +687,4 @@ div#outerWrapDiv {
   height: 100%;
   width: 100%;
 }
+
