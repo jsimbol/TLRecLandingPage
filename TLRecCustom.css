@@ -132,7 +132,7 @@
 
   /*Main Body Div, containing video player*/
   div#coloredBodyDiv {
-    background: #ffffff;
+    background: #f0f0f0;
     margin:auto;
     width:100%;
     min-height:110vh;
@@ -248,7 +248,7 @@
 
   /*Height of the top clear sectioncontaining connect with your audience and main CTA*/
   div#topHeaderSection {
-    height:50vw;
+    height:45vw;
   }
 
   /*Top Green floating Bar*/
