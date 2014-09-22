@@ -135,7 +135,7 @@
     background: #ffffff;
     margin:auto;
     width:100%;
-    min-height:100vh;
+    min-height:110vh;
   }
   /*2nd Main Body Div, the Green Section*/
   div#coloredBodyDiv2 {
@@ -248,7 +248,7 @@
 
   /*Height of the top clear sectioncontaining connect with your audience and main CTA*/
   div#topHeaderSection {
-    height:40vw;
+    height:50vw;
   }
 
   /*Top Green floating Bar*/
