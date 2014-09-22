@@ -625,7 +625,6 @@ padding:0 5px;
 }
 
 .header .logo {
-float:left;
 }
 
 .header .logoImage {
@@ -650,7 +649,7 @@ font-weight:bold;
 .header .search-form {
 float:left;
 overflow:hidden;
-width:35.7%px;
+width:350px;
 }
 
 .header .search-form .search-field {
@@ -662,7 +661,7 @@ float:left;
 height:17px;
 line-height:17px;
 padding:3px 10px 3px 5px;
-width:277px;
+width:271px;
 }
 
 .header .search-form .search-button {
@@ -694,7 +693,7 @@ filter:none;
 
 .header .communitySelectorWrapper {
 float:left;
-width:30%;
+width:40%;
 }
 
 .breadcrumbsWrapper {
