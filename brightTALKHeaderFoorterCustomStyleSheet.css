@@ -650,7 +650,7 @@ font-weight:bold;
 .header .search-form {
 float:left;
 overflow:hidden;
-width:350px;
+width:35.7%px;
 }
 
 .header .search-form .search-field {
@@ -662,7 +662,7 @@ float:left;
 height:17px;
 line-height:17px;
 padding:3px 10px 3px 5px;
-width:271px;
+width:27.7px;
 }
 
 .header .search-form .search-button {
