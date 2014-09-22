@@ -11,6 +11,8 @@
     1.5px -1.5px 0 rgba(0,0,0,0.25),
     -1.5px 1.5px 0 rgba(0,0,0,0.25),
     1.5px 1.5px 0 rgba(0,0,0,0.25);
+    position:relative;
+    display:block;
   }
 
   /*Body text class for all body text content*/
