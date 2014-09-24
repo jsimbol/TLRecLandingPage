@@ -37,6 +37,8 @@
   function getEmailInvalidMessage(domElement, label) {
     return "Please enter a valid email address";
   }
+
+  function checkScreenSize 
 </script>
  
 <!-- Jquery for fancy things!-->
@@ -61,7 +63,7 @@
         jQuery('#layer2').css("display", "block");
        }
        else {
-        jQuery('#layer2').css("display","none"); 
+        jQuery('#layer2').css("display","block"); 
        }
      }
      else {
@@ -80,6 +82,8 @@
      jQuery('html, body').animate({scrollTop:height+90}, duration2);
      return false;
    })
+
+
 });
     
 </script>
@@ -93,21 +97,24 @@
 
     <div class="header">
         <div class="headerTop">
+
             <a href="https://www.brighttalk.com/" class="logo">
-                <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png" width="11%" alt="BrightTALK">
+                <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png" width="139" height="25" alt="BrightTALK">
             </a>
-</div>
         </div>
 
 
         <div class="headerBottom">
-        
+          
+           <div class="communitySelectorWrapper">
+             <a href="#" id="communitySelector" class="communitySelector" style="visibility: hidden;">Browse communities</a>
+                </div>
                             
-<table width="100%" style="border-bottom: 3px solid #f0f0f0; margin:0 auto"><tbody><tr><td width="30%"></td><td width="50%" style="background-color:#ffffff" align="right">
+ 
           <form id="searchForm" class="searchForm" action="https://www.brighttalk.com/webcasts" method="get">
                     <input id="searchField" class="searchField" type="text" name="q" value="" placeholder="Find more webinars and videos" />
                     <button class="searchButton">Search</button>
-                </form></td></tr></tbody></table>
+                </form>
 
                     </div>
 
@@ -123,7 +130,6 @@
 
 <!-- START TEMPLATE HTML - EDIT THIS SECTION -->
 
-<div id="layer2" style="z-index:10px"></div>
 
 <div id="mktContent" class="mktEditable">
 <!-- Base of Landing Page Content -->
@@ -144,7 +150,7 @@
           <tr>
             <td valign="bottom">
               <font class="title1">
-                Be a BrightTALK thought leader<br /><br />
+                Be a BrightTALK Thought Leader<br /><br />
               </font>
             </td>
           </tr>
@@ -161,10 +167,10 @@
     <!--End of topHeaderSection div-->
     
     <!--First Section of the Email with colored background-->
-    <div id="coloredBodyDiv">
+    <div id="coloredBodyDiv" style="background-color:#ffffff; height:40vw">
       <div class="contain">
         <center>
-          <table style="height:100vh" align="center" style="margin:0 auto;">
+          <table  style="height:20vw; padding-top:13vw" align="center">
             <tbody>
               <tr valign="bottom">
                 <td align="center">
@@ -174,7 +180,7 @@
                 </td>
               </tr>
               <tr>
-                <td height="30vw" align="center"><hr style="width:75%; height:0.25vw; background-color:#227700"</hr></td>
+                <td align="center"></td>
               </tr>
               <tr>
                 <td align="center" valign="top">
@@ -201,17 +207,20 @@
     </table>
 </div>
             <div id="coloredBodyDiv2">
-                <br /><br /><br /><br /><br />
-                <font class="header1" id ="infoHeader"><center>The BrightTALK Summit Experience</center></font>
-                <br /><br /><br />
-              <br
-               <center>
+                      <table style="height:75vw">
+      <tbody>
+        <tr valign="middle">
+          <td>
+<font class="header1" id ="infoHeader"><center>The BrightTALK Summit Experience</center></font><br />
+ <center>
         <img style="width:75%" src="https://www.brighttalk.com/content/1411413882_Screen_Shot_2014-09-22_at_12.19.18_PM.png "></center>
-                <br /><br />
+        </tr>
+      </tbody>
+    </table>
+
             </div>
             <br />
-              
-                   <div class="contain">
+                                 <div class="contain">
     <table style="height:40vw">
       <tbody>
         <tr valign="middle">
