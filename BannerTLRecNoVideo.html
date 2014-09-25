@@ -58,7 +58,9 @@
      var scrollPos = jQuery(this).scrollTop();
      var tester = jQuery(this).height();
      if (scrollPos > offset) {
-       jQuery('#barButton').fadeIn(duration);
+       jQuery('#proposal').fadeIn(duration);
+       jQuery('#spacer').css("width","8vw"); 
+
        if (scrollPos  > tester) {
         jQuery('#layer2').css("display", "block");
        }
@@ -69,7 +71,9 @@
      else {
        var scrollPos2 = jQuery(this).scrollTop();
        if (scrollPos2 < offset2) {
-        jQuery('#barButton').fadeOut(duration);
+        jQuery('#proposal').fadeOut(duration);
+       jQuery('#spacer').css("width","15vw"); 
+
        }
      }
    });
@@ -81,6 +85,12 @@
      event.preventDefault();
      jQuery('html, body').animate({scrollTop:height+90}, duration2);
      return false;
+   })
+
+   jQuery('#overview1').click(function(event) {
+    event.preventDefault();
+    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv').offset().top-50}, 1000);
+    return false;
    })
 
 
@@ -97,27 +107,23 @@
 
     <div class="header">
         <div class="headerTop">
-
+          <table style="height:3vw">
+            <tbody>
+              <tr>
+                <td>
             <a href="https://www.brighttalk.com/" class="logo">
-                <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png" width="139" height="25" alt="BrightTALK">
+                <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png"  style="height:2vw; max-height:25px" alt="BrightTALK">
             </a>
+                </td>
+                <td style="width:15vw;" id="spacer"></td>
+                <td style="width:15vw;"><a href="#" class="topBarButton" id="overview1">Overview</a></td>
+                <td style="width:15vw;"><a href="#" class="topBarButton" id="summits">Summits</a></td>
+                <td style="width:15vw;"><a href="#" class="topBarButton" id="audience">Audience</a></td>
+                <td style="width:15vw;"><a href="#" class="topBarButton" id="proposal" style="display:none;">Submit Proposal</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-
-        <div class="headerBottom">
-          
-           <div class="communitySelectorWrapper">
-             <a href="#" id="communitySelector" class="communitySelector" style="visibility: hidden;">Browse communities</a>
-                </div>
-                            
- 
-          <form id="searchForm" class="searchForm" action="https://www.brighttalk.com/webcasts" method="get">
-                    <input id="searchField" class="searchField" type="text" name="q" value="" placeholder="Find more webinars and videos" />
-                    <button class="searchButton">Search</button>
-                </form>
-
-                    </div>
-
     </div>
 </div>
 

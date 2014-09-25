@@ -611,16 +611,26 @@ overflow:hidden;
 .headerWrapper {
 border-bottom:1px solid #e0e0e0;
 padding-top:10px;
+z-index:100;
 }
 
 .headerWrapper .header,.breadcrumbsInner {
 margin:auto;
-width:980px;
+width:100%;
 }
 
 .header .headerTop,.header .headerBottom,.breadcrumbs {
 overflow:hidden;
-padding:0 5px;
+padding-left:10px;
+padding-bottom:10px;
+height:4vw;
+position:fixed;
+background-color:#ffffff;
+top:0px;
+width:100%;
+z-index:100;
+border-bottom:2px solid #f0f0f0;
+border-top:2px solid #f0f0f0;
 }
 
 .header .logo {
