@@ -42,8 +42,15 @@
   font#whatHeader {
     text-shadow:none;
     color:#227700;
+    font-size:4vw;
   }
 
+  /*BTHWhatHeader*/
+  font#whatHeader2 {
+    text-shadow:none;
+    color:#ffffff;
+    font-size:4vw;
+  }
 
   /*Class for header text in all informational sections*/
   .header1 {
@@ -132,6 +139,16 @@
 
   font#videoHeader2 {
     text-align:center;
+    font-family: Arial;
+    font-weight:normal;
+    text-shadow:none;
+    font-size:3vw;
+  }
+
+    /*Text Header for Video in coloredBodyDiv*/
+  font#videoHeader3 {
+    text-align:center;
+    color: rgba(34, 119, 0, 1);
     font-family: Arial;
     font-weight:normal;
     text-shadow:none;
