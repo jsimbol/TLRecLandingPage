@@ -50,7 +50,7 @@
     text-align:center;
     color: rgba(255,255,255,1); 
     font-family: Arial;
-    font-size:4vw;
+    font-size:3.5vw;
     font-weight:lighter;
     text-shadow:
       -1px -1px 0 rgba(75,75,75,0.8),
@@ -58,6 +58,12 @@
       -1px 1px 0 rgba(75,75,75,0.8),
       1px 1px 0 rgba(75,75,75,0.8);
     top:50em;
+  }
+
+  .picCap {
+    color:#227700;
+    font-family:Arial;
+    font-size:25vw;
   }
 
   /*Container for objects within the transparency*/
@@ -118,6 +124,14 @@
   font#videoHeader {
     text-align:center;
     color: rgba(34, 119, 0, 1);
+    font-family: Arial;
+    font-weight:normal;
+    text-shadow:none;
+    font-size:3vw;
+  }
+
+  font#videoHeader2 {
+    text-align:center;
     font-family: Arial;
     font-weight:normal;
     text-shadow:none;

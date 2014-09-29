@@ -53,46 +53,48 @@
    var offset = 400;
    var offset2 = jQuery(window).height();
    var duration = 250;
-   var duration2 = 500;
    jQuery(window).scroll(function() {
      var scrollPos = jQuery(this).scrollTop();
-     var tester = jQuery(this).height();
-     if (scrollPos > offset) {
+     var mainButtonOffset = jQuery('#mainButton').offset().top;
+     if (scrollPos > mainButtonOffset) {
        jQuery('#proposal').fadeIn(duration);
-       jQuery('#spacer').css("width","8vw"); 
-
-       if (scrollPos  > tester) {
-        jQuery('#layer2').css("display", "block");
-       }
-       else {
-        jQuery('#layer2').css("display","block"); 
-       }
+       jQuery('#spaces').fadeIn(duration);
      }
      else {
-       var scrollPos2 = jQuery(this).scrollTop();
-       if (scrollPos2 < offset2) {
-        jQuery('#proposal').fadeOut(duration);
-       jQuery('#spacer').css("width","15vw"); 
-
-       }
-     }
+      jQuery('#spaces').fadeOut(duration);
+      jQuery('#proposal').fadeOut(duration);
+    }
    });
-   
+
     var height2 = 400;
     var height = jQuery('#coloredBodyDiv3').offset().top-57;
     var duration2 = 1000;                   
    jQuery('.back-to-top').click(function(event) {
      event.preventDefault();
-     jQuery('html, body').animate({scrollTop:height+90}, duration2);
+    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv3').offset().top-50}, duration2);
      return false;
    })
 
    jQuery('#overview1').click(function(event) {
     event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv').offset().top-50}, 1000);
+    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv').offset().top-50}, duration2);
     return false;
    })
-
+   jQuery('#summits').click(function(event) {
+    event.preventDefault();
+    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv2').offset().top-50}, duration2);
+    return false;
+   })
+   jQuery('#audience').click(function(event) {
+    event.preventDefault();
+    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv2').offset().top-50}, duration2);
+    return false;
+   })
+   jQuery('#proposal').click(function(event) {
+    event.preventDefault();
+    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv3').offset().top-50}, duration2);
+    return false;
+   })
 
 });
     
@@ -107,19 +109,19 @@
 
     <div class="header">
         <div class="headerTop">
-          <table style="height:3vw">
+          <table style="height:3vw; table-layout:fixed;width:100%">
             <tbody>
               <tr>
-                <td>
+                <td style="background-color:#ffffff; width:17%">
             <a href="https://www.brighttalk.com/" class="logo">
                 <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png"  style="height:2vw; max-height:25px" alt="BrightTALK">
             </a>
                 </td>
-                <td style="width:15vw;" id="spacer"></td>
-                <td style="width:15vw;"><a href="#" class="topBarButton" id="overview1">Overview</a></td>
-                <td style="width:15vw;"><a href="#" class="topBarButton" id="summits">Summits</a></td>
-                <td style="width:15vw;"><a href="#" class="topBarButton" id="audience">Audience</a></td>
-                <td style="width:15vw;"><a href="#" class="topBarButton" id="proposal" style="display:none;">Submit Proposal</a></td>
+                <td style="width:17%;"><a href="#" class="topBarButton" id="overview1">Overview</a></td>
+                <td style="width:17%;"><a href="#" class="topBarButton" id="summits">Summits</a></td>
+                <td style="width:17%;"><a href="#" class="topBarButton" id="audience">Audience</a></td>
+                <td style="width:17%;"><a href="#" class="topBarButton" id="proposal" style="display:none;">Submit Proposal</a></td>
+                <td id="spaces" style="display:none;"></td>
               </tr>
             </tbody>
           </table>
@@ -148,18 +150,22 @@
 
   <!--Content Seciont of the page without footer and header-->
   <div id="mktContent" class="mktEditable">
-    <div id="topHeaderSection">
+    <div id="topHeaderSection" style="background-color:rgba(0,0,0,0.5);">
 
       <!-- Base of Landing Page Content -->
       <table height="100%" align="center" style="margin:0 auto">
         <tbody>
+          <tr><td></td></tr>
           <tr>
-            <td valign="bottom">
+            <td valign="middle">
               <font class="title1">
-                Be a BrightTALK Thought Leader<br /><br />
+                Be a BrightTALK Thought Leader<br />
               </font>
+              <font class="title1" style="font-size:2vw;">Share your knowledge with thousands of professionals who need your insights</font>
             </td>
           </tr>
+          <tr>
+            <td style="height:2vw"></td>
           <tr>
             <td valign="top">
               <!--Main Call to Action Button on the default view page-->
@@ -173,27 +179,37 @@
     <!--End of topHeaderSection div-->
     
     <!--First Section of the Email with colored background-->
-    <div id="coloredBodyDiv" style="background-color:#ffffff; height:40vw">
+    <div id="coloredBodyDiv" style="background-color:#ffffff; padding-top:5vw;padding-bottom:5vw">
       <div class="contain">
         <center>
-          <table  style="height:20vw; padding-top:13vw" align="center">
+          <table  style="height:10vw;" align="center">
             <tbody>
-              <tr valign="bottom">
-                <td align="center">
+              <tr valign="middle">
+                <td align="center" colspan="4">
                   <font class="header1" id="whatHeader">
-                    What is BrightTALK?
+                    Why professionals love BrightTALK<br />
                   </font>
                 </td>
               </tr>
+              <tr><td style="height:1vw"></td></tr>
               <tr>
-                <td align="center"></td>
-              </tr>
-              <tr>
-                <td align="center" valign="top">
+                <td align="center" valign="top" colspan="4">
                   <font class="bodyText" id="videoHeader" style="font-size:2vw">
-                    BrightTALK is where professionals get inspired through valuable insights, share knowledge and inform better decisions.  Think of it like YouTube for business.
+                    At BrightTALK, we believe that people learn the most when they hear directly from those who know the subject best. 
                   </font>
                 </td>
+              </tr>
+              <tr >
+                <td style="padding-top:5vw"><center><img src="http://massconline.com/memberpages/images/portrait_placeholder.jpg" style="height:15vw;"></center></td>
+                <td style="padding-top:5vw"><center><img src="http://massconline.com/memberpages/images/portrait_placeholder.jpg" style="height:15vw;"></center></td>
+                <td style="padding-top:5vw"><center><img src="http://massconline.com/memberpages/images/portrait_placeholder.jpg" style="height:15vw;"></center></td>
+                <td style="padding-top:5vw"><center><img src="http://massconline.com/memberpages/images/portrait_placeholder.jpg" style="height:15vw;"></center></td>
+              </tr>
+              <tr>
+                <td><font style="font-size:1.5vw; color:#227700" ><center>John Doe, CEO of Everything</center></font></td>
+                <td><font style="font-size:1.5vw; color:#227700" ><center>John Doe, CEO of Everything</center></font></td>
+                <td><font style="font-size:1.5vw; color:#227700" ><center>John Doe, CEO of Everything</center></font></td>
+                <td><font style="font-size:1.5vw; color:#227700" ><center>John Doe, CEO of Everything</center></font></td>
               </tr>
             </tbody>
           </table>
@@ -201,21 +217,54 @@
       </div>
     </div>
         <center>
-        <div class="contain" id="whatIs">
-        <table style="height:40vw">
+          <div style="background-color:rgba(0,0,0,0.5);padding-top:5vw; padding-bottom:5vw">
+        <div class="contain" id="whatIs" style=" width:60%; ">
+        <table>
       <tbody>
         <tr valign="middle">
           <td>
-            <font class="header1"><center>What do we do?</center></font><br />
-            <font class="bodyText"><center>BrightTALK runs online summits with 8 to 20 different webinars that attract thousands of IT professionals. We have over 1.5 million subscribers across more than 50 different communities. </center></font>
+            <font class="bodyText"><center>Every day thousands of thought leaders are actively sharing their insights, their ideas and their most up-to-date knowledge with professionals by presenting on BrightTALK.<br /><br /></center></font>
         </tr>
       </tbody>
     </table>
 </div>
-            <div id="coloredBodyDiv2">
-                      <table style="height:75vw">
+    </div>
+    <div style="background-color:rgba(0,0,0,0.5);">
+      <div style="height:0.5vw; background-color:rgba(102,204,0,0.9); width:70vw;"></div>
+    </div>
+        <center>
+          <div style="background-color:rgba(0,0,0, 0.5);padding-top:5vw; padding-bottom:5vw">
+        <div class="contain" id="whatIs2"  style=" width:60%; ">
+        <table>
       <tbody>
         <tr valign="middle">
+          <td style="width:60vw;">
+            <font class="bodyText" id="videoHeader2" style="font-size:2vw"><center>The presentations are delivered through BrightTALK’s easy-to-use webinar and video platform. Professionals prefer this audio-visually immersive knowledge experience because they retain insights better that way* </center></font>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div></center>
+
+    <div style="background-color:rgba(0,0,0,0.5);">
+      <div style="height:0.5vw; background-color:rgba(102,204,0,0.9); width:50vw;"></div>
+    </div>
+          <div style="background-color:rgba(0,0,0,0.5);padding-top:5vw; padding-bottom:5vw">
+        <div class="contain" id="whatIs3" style=" width:60%; ">
+        <table>
+      <tbody>
+        <tr valign="middle">
+          <td style="width:50vw">
+            <font class="bodyText"><p align="middle">This makes BrightTALK the place where professionals get inspired through valuable insights, share knowledge and inform better decisions. Think of it like YouTube for business.<br /><br /><br /></p></font>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>
+            <div id="coloredBodyDiv2" style="padding-top:3vw">
+                      <table style="height:75vw">
+      <tbody>
+        <tr valign="top">
           <td>
 <font class="header1" id ="infoHeader"><center>The BrightTALK Summit Experience</center></font><br />
  <center>
