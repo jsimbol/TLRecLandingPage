@@ -1,3 +1,13 @@
+#theBox_3{
+    display: none; 
+    font-size:1.5vw;
+    color:#4d4d4d;
+    width:100%;
+    margin:auto;
+    height:10vw;
+} 
+
+
   .title1 {
     position:relative;
     top:25%;
@@ -92,7 +102,7 @@
 
   /*Body Text for What is BrightTALK*/
   font#peers {
-        font-size:3vw; 
+        font-size:4vw; 
   }
 
   /*Main Blue Call to Action Button*/
@@ -163,6 +173,15 @@
     font-weight:normal;
     text-shadow:none;
     font-size:3vw;
+  }
+
+  font#videoHeader4 {
+    text-align:center;
+    color: rgba(34, 119, 0, 1);
+    font-family: Arial;
+    font-weight:normal;
+    text-shadow:none;
+    font-size:5vw;
   }
 
   /* Main Content Area - Controls height of page */

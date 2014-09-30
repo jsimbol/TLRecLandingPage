@@ -50,6 +50,18 @@
  
   // Use jQuery via $j(...)
  jQuery(document).ready(function() {
+
+    jQuery("#hover").hover(
+
+    function() {
+        jQuery("#theBox_3").slideDown(500);
+    }, function() {
+        jQuery("#theBox_3").slideUp(500);
+    });
+
+
+
+
    var offset = 400;
    var offset2 = jQuery(window).height();
    var duration = 250;
@@ -87,7 +99,7 @@
    })
    jQuery('#audience').click(function(event) {
     event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv2').offset().top-50}, duration2);
+    jQuery('html,body').animate({scrollTop:jQuery('#peers2').offset().top-50}, duration2);
     return false;
    })
    jQuery('#proposal').click(function(event) {
@@ -258,46 +270,53 @@
     </table>
 </div>
 </div>
-            <div id="coloredBodyDiv2" style="padding-top:3vw">
-    <div class="contain">
-        
-          <table  style="height:10vw; width:75%" align="center">
-            <tbody>
-              <tr valign="middle">
-                <td align="left" colspan="4">
-                  <font class="header1" id="whatHeader">
-                    Your Stage<br />
-                  </font>
-                </td>
-              </tr>
-              <tr>
-                <td align="left" valign="top" colspan="4">
-                  <font class="bodyText" id="videoHeader" style="font-size:2vw; color:#4d4d4d">
-                    BrightTALK runs online summits attracting thousands of IT and line-of-business professionals.<br></font>
-                    <font style="font-size:1.5vw; color:#818181">This vibrant exchange of ideas between viewers and presenters is one of the biggest value creators for professionals on BrightTALK. The free, live, interactive access to businesses’ top thought leaders is designed to make our professionals better at their jobs and more successful in their career. We also tag your thought leadership in all relevant communities on BrightTALK so your insights create compound value on-demand.</font><br /><br /> 
-                  </font>
-                </td>
-              </tr>
-      </tbody>
-    </table>
-</div>
+</center>
+            <div id="coloredBodyDiv2" style="border-bottom:3px solid #818181; padding-top:3vw">
+
+
+<div class="contain" id="hover" style="width:60%; padding-left:5vw; padding-right:5vw; border-left:1px solid #f0f0f0; border-right:1px solid #f0f0f0" align="left">
+<font id = "videoHeader4"><center>Your Story</font>
+<div style="margin-top:1.25vw; width:45%; height:0.25vw; background-color:#818181"><br /></div>
+<font id = "videoHeader2" style="font-size:2vw; text-align:middle"><br />BrightTALK runs online summits that attract thousands of IT and line-of-business professionals. <br /><center><img src="http://cdn.flaticon.com/png/256/50284.png" style="padding-top:0.5vw; height:2vw"><br /></font>
+<div id="theBox_3" align="left"><font align="left"><br /><center>This vibrant exchange of ideas between viewers and presenters is one of the biggest value creators for professionals on BrightTALK. The free, live, interactive access to businesses’ top thought leaders is designed to make our professionals better at their jobs and more successful in their career. We also tag your thought leadership in all relevant communities on BrightTALK so your insights create compound value on-demand.</font></div></div><br /><br />
+<img src="https://www.brighttalk.com/content/1412051282_Screen_Shot_2014-09-29_at_9.27.13_PM.png" style="width:70vw" />
+
+
             </div>
-            <br />
-                                 <div class="contain">
-    <table style="height:40vw">
+<center>
+<div class="contain" id = "peers2" style="background-color:rgba(0,0,0,0.75); width:100%; padding-top: 5vw; padding-bottom: 5vw; margin:auto;">
+    <table>
       <tbody>
         <tr valign="middle">
           <td>
-            <font class="header1" id="peers"><center>What do your peers think of BrightTALK?</center></font><br />
-            <font class="bodyText" id = "testimonialText"><center>"I'm passionate about helping brands develop great stories and BrightTALK has enabled me to reach a wider audience than ever before.
-              I was able to connect with a new client as a direct result of this wonderful platform." <br /><br />-Eileen Sutton, Sutton Creative</center></font>
+            <font class="header1" id="peers"><center>Engage new audiences with BrightTALK Summits</center></font><br />
+            <font class="bodyText" id = "testimonialText"><center>Extend your reach by accessing our rapidly growing community of IT Service Professionals</center></font>
+          </td>
+        </tr>
+        <tr>
+          <td style="height:2vw"></td></tr>
+        <tr>
+          <td><center>
+            <img src="https://www.brighttalk.com/content/1412054871_InfoSecSize.png" style="width:50vw" /></center>
           </td>
         </tr>
       </tbody>
     </table>
 </div>
-              
+
+<div id="coloredBodyDiv3" style="background-color:#ffffff">
+<div class = "contain">
+
+
+
+</div>
+</div>
+           
+
+
+   
               <div id="coloredBodyDiv3" style="background-color:#ffffff">
+                <div class="contain">
                   <table style="height:100%; background-color:#ffffff">
                     <tbody>
                       <tr valign="middle">
@@ -317,7 +336,7 @@
                        </td>
                       </tr>
                       <tr>
-                        <td>
+                        <td></div></div>
                           <div class="footerWrapper" style="background-color:#ffffff">
 
     <div id="footer" class="footer">
