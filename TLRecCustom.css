@@ -49,8 +49,18 @@
   font#whatHeader2 {
     text-shadow:none;
     color:#ffffff;
-    font-size:4vw;
+    font-size:5vw;
   }
+
+
+  div#hiddenText {
+    overflow:hidden;
+    display:inline-block;
+    position:relative;
+    height:0;
+
+  }
+
 
   /*Class for header text in all informational sections*/
   .header1 {
@@ -191,8 +201,7 @@
     background-size:cover;
     background-position:left top;
     display:block;
-    top:0;
-    left:0;
+
     width:100%;
     height:100%;
     z-index:-52;
@@ -384,7 +393,7 @@ div#innerWrapDiv {
   background-image:url(https://www.brighttalk.com/content/1411060241_bg2.jpg);
   background-size:cover;
   background-attachment:fixed;
-  background-position:center center;
+  background-position:center top;
   }
 
 
