@@ -2,7 +2,7 @@ video#bgvid {
   position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -100;
-background: url(San Francisco 4K Stock Footage.mp4) no-repeat;
+background: url(https://dl.dropboxusercontent.com/s/vetmiu4an25r9jr/San%20Francisco%204K%20Stock%20Footage%20%281%29.mp4) no-repeat;
 background-size: cover;
 }
 
@@ -185,7 +185,7 @@ background-size: cover;
 
   font#videoHeader4 {
     text-align:center;
-    color: rgba(34, 119, 0, 1);
+    color: #66cc00;
     font-family: Arial;
     font-weight:normal;
     text-shadow:none;
@@ -206,7 +206,6 @@ background-size: cover;
   }
   /*2nd Main Body Div, the Green Section*/
   div#coloredBodyDiv2 {
-    background: #ffffff;
     margin:auto;
     width:100%;
   }

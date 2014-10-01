@@ -92,14 +92,10 @@
     jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv').offset().top-50}, duration2);
     return false;
    })
-   jQuery('#summits').click(function(event) {
-    event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv2').offset().top-50}, duration2);
-    return false;
-   })
+
    jQuery('#audience').click(function(event) {
     event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#peers2').offset().top-50}, duration2);
+    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv2').offset().top-50}, duration2);
     return false;
    })
    jQuery('#proposal').click(function(event) {
@@ -124,16 +120,16 @@
           <table style="height:3vw; table-layout:fixed;width:100%">
             <tbody>
               <tr>
-                <td style="background-color:#ffffff; width:17%">
+                <td style="background-color:#ffffff; width:20%">
             <a href="https://www.brighttalk.com/" class="logo">
                 <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png"  style="height:2vw; max-height:25px" alt="BrightTALK">
             </a>
                 </td>
-                <td style="width:17%;"><a href="#" class="topBarButton" id="overview1">Overview</a></td>
-                <td style="width:17%;"><a href="#" class="topBarButton" id="summits">Summits</a></td>
-                <td style="width:17%;"><a href="#" class="topBarButton" id="audience">Audience</a></td>
-                <td style="width:17%;"><a href="#" class="topBarButton" id="proposal" style="display:none;">Submit Proposal</a></td>
-                <td id="spaces" style="display:none;"></td>
+                <td style="width:20%;"><a href="#" class="topBarButton" id="overview1">Overview</a></td>
+                
+                <td style="width:20%;"><a href="#" class="topBarButton" id="audience">Audience</a></td>
+                <td style="width:20%;"><a href="#" class="topBarButton" id="proposal" style="display:none;">Submit Proposal</a></td>
+                <td id="spaces" style="width:20%; display:none;"></td>
               </tr>
             </tbody>
           </table>
@@ -174,9 +170,9 @@
                 Be a BrightTALK Thought Leader<br />
               </font>
               <video autoplay muted loop id="bgvid">
-                  <source src="http://v8.tinypic.com/player.swf?file=21bk57c&s=8" type="video/mp4">
+                  <source src="https://dl.dropboxusercontent.com/s/vetmiu4an25r9jr/San%20Francisco%204K%20Stock%20Footage%20%281%29.mp4" type="video/mp4">
                   </video>
-              <font class="title1" style="font-size:2vw;">Share your knowledge with thousands of professionals who need your insights</font>
+              <font class="title1" style="font-size:2vw;">Share your insights with thousands of professionals</font>
             </td>
           </tr>
           <tr>
@@ -192,7 +188,7 @@
 
     </div>
     <!--End of topHeaderSection div-->
-    
+
     <!--First Section of the Email with colored background-->
     <div id="coloredBodyDiv" style="background-color:#ffffff; padding-top:5vw;padding-bottom:5vw">
       <div class="contain">
@@ -208,7 +204,7 @@
               <tr>
                 <td align="center" valign="top" colspan="4">
                   <font class="bodyText" id="videoHeader" style="font-size:1.5vw"><center><div style="width:90%">
-                    We believe people learn the most when they hear directly from those who know the subject best. </div></center>
+                     </div></center>
                   </font>
                 </td>
               </tr>
@@ -216,7 +212,7 @@
                             <tr><td style="height:4vw;"></td></tr>
                       <tr >
           <td colspan="4">
-            <font class="bodyText" id="videoHeader3" style="font-size:2vw; color:#4d4d4d"><center><div style="width:100%">Every day thousands of thought leaders are actively sharing their insights, ideas and most up-to-date knowledge with professionals by presenting on BrightTALK.</div></center></font></td>
+            <font class="bodyText" id="videoHeader3" style="font-size:2vw; color:#4d4d4d"><center><div style="width:100%">Every day thousands of thought leaders share their insights and ideas with modern professionals who seek knowledge on BrightTALK</div></center></font></td>
         </tr>
               <tr valign="top">
                 <td style="padding-top:2vw"><center><img src="https://www.brighttalk.com/content/1412091488_DavidClarke.jpg" style="height:15vw;"></center></td>
@@ -236,182 +232,33 @@
         </center>
       </div>
     </div>
-          <div style="background-color:rgba(0,0,0,0.2);padding-top:5vw; padding-bottom:0vw">
-        <div class="contain" id="whatIs" style=" width:75%; ">
-        <table>
-      <tbody>
-                      <tr><center><td style="padding-left:5.5vw"><font class="header1" id="whatHeader2"><center>Inspire Through BrightTALK</center></font></div></td></tr>
-        <tr valign="middle">
-        </tr>
-      </tbody>
-    </table>
-</div>
-    </div>
-    <div style="background-color:rgba(0,0,0,.2);">
-    </div>
-        <center>
-          <div style="background-color:rgba(0,0,0, 0.2); padding-bottom:5vw">
-        <div class="contain" id="whatIs2"  style=" width:60%; ">
-        <table>
-      <tbody>
-         <tr><td style="height:1vw">      <div style="height:0.5vw; background-color:rgba(34,119,0,1); width:55vw;"></div></td></tr>
-                <tr valign="middle">
-          <td style="width:55vw; height:6vw">
-            <font class="bodyText" id="videoHeader2" style="font-size:2vw; color:#d7d7d7">The presentations are delivered through BrightTALK’s easy-to-use webinar and video platform.</font></td>
-        </tr>
-        <tr><td style="height:1vw">      <div style="height:0.5vw; background-color:rgba(34,119,0,0.25); width:50vw;"></div></td></tr>
-                <tr valign="middle">
-          <td style="width:50vw; height:6vw">
-            <font class="bodyText" id="videoHeader2" style="font-size:1.75vw;  color:#d7d7d7">Professionals prefer this audio-visually immersive knowledge experience because they retain insights better that way.* </font></td>
-        </tr>
-        <tr><td style="height:0vw">      <div style="height:0.5vw; background-color:rgba(34,119,0,0.25); width:45vw;"></div></td></tr>
-                <tr valign="middle">
-          <td style="width:10vw;"><div style="width:45vw">
-            <font class="bodyText" id="videoHeader2" style="font-size:1.5vw; color:#d7d7d7"><br />BrightTALK is where professionals get inspired through valuable insights, share knowledge and inform better decisions.</div></font></td>
-        </tr>
-      </tbody>
-    </table>
-</div>
-</div>
-</center>
-            <div id="coloredBodyDiv2" style="border-bottom:3px solid #818181; padding-top:3vw">
+
+            <div id="coloredBodyDiv2" style="padding-top:3vw">
 
 
-<div class="contain" id="hover" style="width:60%; padding-left:5vw; padding-right:5vw; border-left:1px solid #f0f0f0; border-right:1px solid #f0f0f0" align="left">
-<font id = "videoHeader4"><center>Your Story</font>
+<div class="contain" id="hover" style="width:60%; padding-left:5vw; padding-right:5vw;" align="left">
+<font class="header1" id = "peers" style="color:#ffffff;"><center>Your Story</font>
 <div style="margin-top:1.25vw; width:45%; height:0.25vw; background-color:#818181"><br /></div>
-<font id = "videoHeader2" style="font-size:2vw; text-align:middle"><br />BrightTALK runs online summits that attract thousands of IT and line-of-business professionals. <br /><center><img src="http://cdn.flaticon.com/png/256/50284.png" style="padding-top:0.5vw; height:2vw"><br /></font>
-<div id="theBox_3" align="left"><font align="left"><br /><center>This vibrant exchange of ideas between viewers and presenters is one of the biggest value creators for professionals on BrightTALK. The free, live, interactive access to businesses’ top thought leaders is designed to make our professionals better at their jobs and more successful in their career. We also tag your thought leadership in all relevant communities on BrightTALK so your insights create compound value on-demand.</font></div></div><br /><br />
-<img src="https://www.brighttalk.com/content/1412051282_Screen_Shot_2014-09-29_at_9.27.13_PM.png" style="width:70vw" />
+<font class="bodyText" id = "testimonialText" style="font-size:2vw; text-align:middle;"><br />BrightTALK has a vibrant Information Security community with online summits that feature influential thought leaders and attract thousands of attendees.<br /><center><br /></font>
+</div><br /><br />
+<img src="https://www.brighttalk.com/content/1412054871_InfoSecSize.png" style="width:70vw" />
 
 
             </div>
 <center>
 <div class="contain" id = "peers2" style="background-color:rgba(0,0,0,0.2); width:100%; padding-top: 5vw; padding-bottom: 5vw; margin:auto;">
-    <table>
-      <tbody>
-        <tr valign="middle">
-          <td>
-            <font class="header1" id="peers"><center>Engage new audiences with BrightTALK Summits</center></font><br />
-            <font class="bodyText" id = "testimonialText"><center>Extend your reach by accessing our rapidly growing community of IT Service Professionals</center></font>
-          </td>
-        </tr>
-        <tr>
-          <td style="height:2vw"></td></tr>
-        <tr>
-          <td><center>
-            <img src="https://www.brighttalk.com/content/1412054871_InfoSecSize.png" style="width:50vw" /></center>
-          </td>
-        </tr>
-        <tr><td style="height:5vw"></td></tr>
-        <tr>
-          <td style="padding-top:5vw; padding-bottom:5vw; background-color:#227700; padding:5vw;">
-            <font class="header1" id="peers" style="font-size: 3vw;"><center>Become a BrightTALK thought leader to connect, inform and inspire thousands of professionals today.</center></font>
-          </td>
-        </tr>
-        <tr>
-      </tbody>
-    </table>
+    
 
 
-  <div id="coloredBodyDiv3" style="padding-top:5vw; background-color:#ffffff">
-<div class = "contain">
-<font class="header1" id="videoHeader" width="75%"><div style="font-size:2vw; margin:auto; width:75%">
-                To become a thought leader on BrightTALK please fill out the form below and we will be in contact with you shortly.
-  <br /></div></font>
-<script src="//app-sji.marketo.com/js/forms2/js/forms2.js"></script>
-<form id="mktoForm_1182"></form>
-<script>MktoForms2.loadForm("//app-sji.marketo.com", "105-RTY-982", 1182);</script>
-                            <br /><br /><br />
-                          </div>
-</div>
+  <div id="coloredBodyDiv3" style="padding-top:5vw; background-color:#ffffff"></div>
+
 
 
 
 
 <div class="footerWrapper" style="background-color:#ffffff">
 
-    <div id="footer" class="footer">
-
-        <div class="footerHeadersWrapper">
-
-            <div class="footerHeaders">
-                <ul>
-                    <li class="footerHeader active first">Marketing solutions</li>
-                    <li class="footerHeader">About</li>
-                    <li class="footerHeader">Support</li>
-                    <li class="footerHeader">Connect with us</li>
-                    <li class="footerHeader last">Academy</li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="footerSectionsWrapper">
-
-            <div class="footerSections">
-
-                <div class="footerSection active">
-                    <ul>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/marketing-solutions/marketing-platform" class="footerLink">Platform overview</a></li>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/marketing-solutions/content-audience-revenue" class="footerLink">Features</a></li>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/marketing-solutions/pricing" class="footerLink">Pricing</a></li>
-                    </ul>
-                </div>
-
-                <div class="footerSection">
-                    <ul>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/pages/about-brighttalk/company" class="footerLink">Company profile</a></li>
-                        <li class="footerLinkWrapper"><a href="http://press.brighttalk.com/" class="footerLink">Press room</a></li>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/pages/about-brighttalk/contact-us" class="footerLink">Contact us</a></li>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/pages/careers" class="footerLink">Careers</a></li>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/pages/board-members" class="footerLink">Board members</a></li>
-                    </ul>
-                </div>
-
-                <div class="footerSection">
-                    <ul>
-                        <li class="footerLinkWrapper"><a href="https://support.brighttalk.com/categories/20032942-viewers" target="_blank" class="footerLink">Viewers</a></li>
-                        <li class="footerLinkWrapper"><a href="https://support.brighttalk.com/categories/20032947-presenters" target="_blank" class="footerLink">Presenters</a></li>
-                        <li class="footerLinkWrapper"><a href="https://support.brighttalk.com/categories/20033251-channel-owners" target="_blank" class="footerLink">Channel owners</a></li>
-                        <li class="footerLinkWrapper"><a href="https://www.brighttalk.com/pages/customer-support/test-your-system" class="footerLink">Test your system</a></li>
-                    </ul>
-                </div>
-
-                <div class="footerSection">
-                    <ul>
-                        <li class="footerLinkWrapper"><a href="http://itunes.apple.com/us/app/my-brighttalk/id526682683?mt=8" target="_blank" class="footerLink">App</a> <img href="https://www.brighttalk.com/themes/bt2010/images/bt-fav-icon-12x12.gif?v=57554770" alt="" /></li>
-                        <li class="footerLinkWrapper"><a href="http://blog.brighttalk.com/" target="_blank" class="footerLink">Blog</a></li>
-                        <li class="footerLinkWrapper"><a href="https://twitter.com/brighttalk" target="_blank" class="footerLink">Twitter</a></li>
-                        <li class="footerLinkWrapper"><a href="https://www.facebook.com/BrightTALK" target="_blank" class="footerLink">Facebook</a></li>
-                        <li class="footerLinkWrapper"><a href="http://www.linkedin.com/company/204345" target="_blank" class="footerLink">LinkedIn</a></li>
-                        <li class="footerLinkWrapper"><a href="https://plus.google.com/109809814529589522045/posts" target="_blank" class="footerLink">Google+</a></li>
-                    </ul>
-                </div>
-
-                <div class="footerSection last">
-                    <ul>
-                        <li class="footerLinkWrapper"><a href="http://academy.brighttalk.com/" target="_blank" class="footerLink">Academy home</a></li>
-                        <li class="footerLinkWrapper"><a href="http://academy.brighttalk.com/best-practices/" target="_blank" class="footerLink">Best practices</a></li>
-                        <li class="footerLinkWrapper"><a href="http://academy.brighttalk.com/beginners-guide/" target="_blank" class="footerLink">Beginners guide</a></li>
-                        <li class="footerLinkWrapper"><a href="http://academy.brighttalk.com/success-stories/" target="_blank" class="footerLink">Success stories</a></li>
-                        <li class="footerLinkWrapper"><a href="http://academy.brighttalk.com/how-to-tutorials/" target="_blank" class="footerLink">How-to tutorials</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="baseLinks">
-            <ul>
-                <li class="baseLinkWrapper"><a class="footerLink" href="https://www.brighttalk.com/pages/user-agreement">User agreement</a></li>
-                <li class="baseLinkWrapper"><a class="footerLink" href="https://www.brighttalk.com/pages/privacy-policy">Privacy policy</a></li>
-                <li class="baseLinkWrapper"><a class="footerLink" href="https://www.brighttalk.com/pages/patents-pending">Patents pending</a></li>
-                <li class="baseLinkWrapper"><a class="footerLink" href="https://www.brighttalk.com/pages/about-brighttalk/contact-us/feedback">Feedback</a></li>
-                <li class="baseLinkWrapper">&copy; 2013 BrightTALK</li>
-            </ul>
-        </div>
+    
 </div>
 </div> 
 </tr>
