@@ -14,7 +14,7 @@
 <!-- SYSTEM CSS - DO NOT EDIT -->
 <link rel="stylesheet" type="text/css" media="screen" href="/css/mktLPSupport.css" />
 <link type='text/css' rel='stylesheet' href="https://rawgit.com/jsimbol/TLRecLandingPage/master/brightTALKHeaderFoorterCustomStyleSheet.css">
-<link type='text/css' rel='stylesheet' href="TLRecCustom.css">
+<link type='text/css' rel='stylesheet' href="https://rawgit.com/jsimbol/TLRecLandingPage/master/TLRecCustom.css">
 
 
  
@@ -43,28 +43,22 @@
  
 <!-- Jquery for fancy things!-->
 <script language="JavaScript" src="https://app.marketo.com/js/public/jquery-latest.min.js" type="text/javascript"></script>
-
+<script language="JavaScript" src="//app-sji.marketo.com/js/forms2/js/forms2.js" type="text/javascript"></script>
+  
 <script>
   // to make fancy buttons.  Uses noConflict just in case
   var $jQ = jQuery.noConflict();
  
   // Use jQuery via $j(...)
  jQuery(document).ready(function() {
-
-    jQuery("#hover").hover(
-
-    function() {
-        jQuery("#theBox_3").slideDown(500);
-    }, function() {
-        jQuery("#theBox_3").slideUp(500);
-    });
-
-
-
-
+   var height2 = 400;
+   var height = jQuery('#coloredBodyDiv3').offset().top-57;
+   var duration2 = 1000;   
    var offset = 400;
    var offset2 = jQuery(window).height();
    var duration = 250;
+   
+   
    jQuery(window).scroll(function() {
      var scrollPos = jQuery(this).scrollTop();
      var mainButtonOffset = jQuery('#mainButton').offset().top;
@@ -78,14 +72,10 @@
     }
    });
 
-    var height2 = 400;
-    var height = jQuery('#coloredBodyDiv3').offset().top-57;
-    var duration2 = 1000;                   
+
    jQuery('.back-to-top').click(function(event) {
-     event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv3').offset().top-50}, duration2);
-     return false;
-   })
+     MktoForms2.loadForm("//app-sji.marketo.com", "105-RTY-982", 1182, function (form){MktoForms2.lightbox(form).show();});
+   });
 
    jQuery('#overview1').click(function(event) {
     event.preventDefault();
@@ -100,7 +90,6 @@
    })
    jQuery('#proposal').click(function(event) {
     event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv3').offset().top-50}, duration2);
     return false;
    })
 
@@ -155,9 +144,11 @@
 
   <!--Floating call to action at the top of the page-->
   <a href="#" class="back-to-top" id = "barButton">Submit Proposal</a>
-
+<div class="contain" id = "peers2" style="background-color:rgba(0,0,0,0.2); width:100%; padding-top: 5vw; padding-bottom: 5vw; margin:auto;">
   <!--Content Seciont of the page without footer and header-->
-  <div id="mktContent" class="mktEditable">
+  <div id="mktContent" class="mktEditable" style="backgroun-">
+    
+   
     <div id="topHeaderSection" style="background-color:rgba(0,0,0,0.2);">
 
       <!-- Base of Landing Page Content -->
@@ -243,23 +234,28 @@
 </div><br /><br />
 <img src="https://www.brighttalk.com/content/1412054871_InfoSecSize.png" style="width:70vw" />
 
+<br />
+<br />
+<br />
+<br />
+<br />
+              <a href="#" class="back-to-top" id = "mainButton">Submit Proposal</a>
+
+
 
             </div>
 <center>
-<div class="contain" id = "peers2" style="background-color:rgba(0,0,0,0.2); width:100%; padding-top: 5vw; padding-bottom: 5vw; margin:auto;">
-    
-
-
-  <div id="coloredBodyDiv3" style="padding-top:5vw; background-color:#ffffff"></div>
-
-
-
-
-
-<div class="footerWrapper" style="background-color:#ffffff">
 
     
-</div>
+
+
+  <div id="coloredBodyDiv3" style="padding-top:5vw;"></div>
+
+
+
+
+
+
 </div> 
 </tr>
 </td>
