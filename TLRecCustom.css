@@ -4,11 +4,11 @@ div#lightbox {
 }
 
 video#bgvid {
-  position: fixed; top:-16vw  ; right:0;
-min-width: 100vw;  z-index: -100;
-background: url(https://dl.dropboxusercontent.com/s/6e6xh7ou53fciwf/18566_C2C_10_panel.webmhd.webm) no-repeat;
+  position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(https://dl.dropboxusercontent.com/s/vetmiu4an25r9jr/San%20Francisco%204K%20Stock%20Footage%20%281%29.mp4) no-repeat;
 background-size: cover;
-height:175%;
 }
 
 #theBox_3{
@@ -426,10 +426,10 @@ height:175%;
 /* Width of Full Page */
 div#innerWrapDiv {
   width: 100%;
-  /*background-image:url(https://www.brighttalk.com/content/1412094641_bigstock-Speaker-at-Business-Conference-65279563.jpg);
+  background-image:url(https://www.brighttalk.com/content/1412094641_bigstock-Speaker-at-Business-Conference-65279563.jpg);
   background-size:cover;
   background-attachment:fixed;
-  background-position:center center;*/
+  background-position:center center;
   }
 
 

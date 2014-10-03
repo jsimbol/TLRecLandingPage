@@ -14,7 +14,7 @@
 <!-- SYSTEM CSS - DO NOT EDIT -->
 <link rel="stylesheet" type="text/css" media="screen" href="/css/mktLPSupport.css" />
 <link type='text/css' rel='stylesheet' href="https://rawgit.com/jsimbol/TLRecLandingPage/master/brightTALKHeaderFoorterCustomStyleSheet.css">
-<link type='text/css' rel='stylesheet' href="https://rawgit.com/jsimbol/TLRecLandingPage/master/TLRecCustom.css">
+<link type='text/css' rel='stylesheet' href="TLRecCustom.css">
 
 
  
@@ -89,8 +89,7 @@
     return false;
    })
    jQuery('#proposal').click(function(event) {
-    event.preventDefault();
-    return false;
+     MktoForms2.loadForm("//app-sji.marketo.com", "105-RTY-982", 1182, function (form){MktoForms2.lightbox(form).show();});
    })
 
 });
@@ -160,9 +159,9 @@
               <font class="title1">
                 Be a BrightTALK Thought Leader<br />
               </font>
-              <video autoplay muted loop id="bgvid">
+              <!--<video autoplay muted loop id="bgvid">
                   <source src="https://dl.dropboxusercontent.com/s/vetmiu4an25r9jr/San%20Francisco%204K%20Stock%20Footage%20%281%29.mp4" type="video/mp4">
-                  </video>
+                  </video>-->
               <font class="title1" style="font-size:2vw;">Share your insights with thousands of professionals</font>
             </td>
           </tr>
