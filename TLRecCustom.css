@@ -1,3 +1,12 @@
+/*
+ *Title:TLRecCustom.css
+ *Purpose:Style Sheet created in addition to BrightTALK standard style sheet
+ *Author:Jose Alfonso Simbol
+ *Email:jsimbol@brighttalk.com
+ *Collaborators:Aiden Meister, Alex Pisani, Tammy Le, Donavan Smandra, Val-Pierre Genton, Kineon Walker
+ *Date last modified:13 October 2014
+ */
+
 video#bgvid {
   position: fixed; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
@@ -31,7 +40,10 @@ background-size: cover;
     1.5px 1.5px 0 rgba(0,0,0,0.25);
     position:relative;
     display:block;
+  }
 
+  #taglineSub {
+    font-size:2vw;
   }
 
   /*Body text class for all body text content*/
@@ -108,11 +120,49 @@ background-size: cover;
     width:75%;
   }
 
-  /*Body Text for What is BrightTALK*/
-  font#peers {
-        font-size:4vw; 
+  #line {
+    margin-top:1.25vw;
+    width:45%;
+    height:0.25vw;
+    background-color:#818181;
   }
 
+  /*Body Text for What is BrightTALK*/
+  font#peers {
+    font-size:4vw;
+    color:#ffffff; 
+  }
+
+  a#mainButton2 {
+    border: 2px solid #66cc00;
+    background: #22700;
+    background: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#227700));
+    background: -webkit-linear-gradient(top, #66cc00, #227700);
+    background: -moz-linear-gradient(top, #227700, #66cc00);
+    background: -ms-linear-gradient(top, #227700, #66cc00);
+    background: -o-linear-gradient(top, #227700, #66cc00);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    margin:auto;
+    display:block;
+    position:relative;
+    top:25%;
+    z-index:99;
+    width:30vw;
+    height:1vw;
+    text-align:center;
+    color:#ffffff;
+    padding-bottom:2.75vw;
+    font-size:2vw;
+  } 
   /*Main Blue Call to Action Button*/
   a#mainButton {
     border: 2px solid #66cc00;
@@ -206,14 +256,19 @@ background-size: cover;
     font-size:3vw;
   }
 
+  .thoughtLeaderName {
+    font-size:1.5vw;
+    color:#818181;
+  }
+
     /*Text Header for Video in coloredBodyDiv*/
   font#videoHeader3 {
     text-align:center;
-    color: rgba(34, 119, 0, 1);
+    color:#4d4d4d; 
     font-family: Arial;
     font-weight:normal;
     text-shadow:none;
-    font-size:3vw;
+    font-size:2vw;
   }
 
   font#videoHeader4 {
@@ -233,14 +288,17 @@ background-size: cover;
 
   /*Main Body Div, containing video player*/
   div#coloredBodyDiv {
-    background: #f0f0f0;
+    background: #ffffff;
     margin:auto;
     width:100%;
+    padding-top:5vw;
+    padding-bottom:5vw;
   }
   /*2nd Main Body Div, the Green Section*/
   div#coloredBodyDiv2 {
     margin:auto;
     width:100%;
+    padding-top:3vw;
   }
   /*3rd Main Body Div, containing the form*/
   div#coloredBodyDiv3 {
@@ -256,6 +314,7 @@ background-size: cover;
 
   font#testimonialText {
     font-size:2vw;
+    text-align:middle;
   }
   
   /*First image background, Val Laughing image*/
@@ -322,6 +381,7 @@ background-size: cover;
     text-decoration:none;
     color:#818181;
     line-height:3vw;
+    padding:0.25vw;
   }
 
   .topBarButton:hover {
@@ -337,6 +397,12 @@ background-size: cover;
 
   #proposal:hover {
     background-color:#818181;
+  }
+
+  #hover {
+    width:60%;
+    padding-left:5vw;
+    padding-right:5vw;
   }
 
   /*Class for the Bar Button*/
@@ -445,10 +511,13 @@ background-size: cover;
     display:none;
   }
 
-
-
-
-
+  div#peers2 {
+    background-color:rgba(0,0,0,0.4);
+    width:100%;
+    padding-top:5vw;
+    padding-bottom:5vw;
+    margin:auto;
+  }
 
 
 /* Width of Full Page */
