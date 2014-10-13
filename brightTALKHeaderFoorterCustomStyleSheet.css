@@ -639,6 +639,8 @@ float:left;
 
 .header .logoImage {
 display:block;
+height:2vw;
+max-height:25px;
 }
 
 .header .userStatusWrapper {

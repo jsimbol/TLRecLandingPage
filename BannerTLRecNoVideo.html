@@ -13,7 +13,7 @@
 
 <!-- SYSTEM CSS - DO NOT EDIT -->
 <link rel="stylesheet" type="text/css" media="screen" href="/css/mktLPSupport.css" />
-<link type='text/css' rel='stylesheet' href="https://rawgit.com/jsimbol/TLRecLandingPage/master/brightTALKHeaderFoorterCustomStyleSheet.css">
+<link type='text/css' rel='stylesheet' href="brightTALKHeaderFoorterCustomStyleSheet.css">
 <link type='text/css' rel='stylesheet' href="TLRecCustom.css">
 
 
@@ -49,101 +49,119 @@
   // to make fancy buttons.  Uses noConflict just in case
   var $jQ = jQuery.noConflict();
  
+
   // Use jQuery via $j(...)
- jQuery(document).ready(function() {
-   var height2 = 400;
-   var height = jQuery('#coloredBodyDiv3').offset().top-57;
-   var duration2 = 1000;   
-   var offset = 400;
-   var offset2 = jQuery(window).height();
-   var duration = 250;
-   
-   
-   jQuery(window).scroll(function() {
-     var scrollPos = jQuery(this).scrollTop();
-     var mainButtonOffset = jQuery('#mainButton').offset().top;
-     if (scrollPos > mainButtonOffset) {
-       jQuery('#proposal').fadeIn(duration);
-       jQuery('#spaces').fadeIn(duration);
-     }
-     else {
-      jQuery('#spaces').fadeOut(duration);
-      jQuery('#proposal').fadeOut(duration);
-    }
-   });
+  jQuery(document).ready(function() {
+    //global variables to be used in jQuery
+    //variable for duration of top bar button fade in and out
+    var duration = 250;
+    //variable for duration of scroll animation for moving to certain sections
+    var duration2 = 1000;
 
+    //jQuery scroll function to be called on every change of scroll position
+    jQuery(window).scroll(function() {
+      //variable for getting current scroll position
+      var scrollPos = jQuery(this).scrollTop();
+      //variable for getting main call to action button's top position
+      var mainButtonOffset = jQuery('#mainButton').offset().top;
+      //if main call to action button is off the top of the screen
+      if (scrollPos > mainButtonOffset) {
+        //fade in top bar button and spacer
+        jQuery('#proposal').fadeIn(duration);
+        jQuery('#spaces').fadeIn(duration);
+      }
+      //if main call o action button is visible on the screen
+      else {
+        //fade out top bar button and spacer
+        jQuery('#spaces').fadeOut(duration);
+        jQuery('#proposal').fadeOut(duration);
+      }
+    });
 
-   jQuery('.back-to-top').click(function(event) {
-     MktoForms2.loadForm("//app-sji.marketo.com", "105-RTY-982", 1182, function (form){MktoForms2.lightbox(form).show();});
-   });
+    //on click functions
+    //clicking main call to action buttons
+      jQuery('.back-to-top').click(function(event) {
+        //load marketo lightbox form
+        MktoForms2.loadForm("//app-sji.marketo.com", "105-RTY-982", 1182, function (form){MktoForms2.lightbox(form).show();});
+      });
+    //clicking on overview button
+    jQuery('#overview1').click(function(event) {
+      event.preventDefault();
+      //scroll to overview section
+      jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv').offset().top-50}, duration2);
+      return false;
+    })
+    //clicking on audience button
+    jQuery('#audience').click(function(event) {
+      event.preventDefault();
+      //scroll to audience section
+      jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv2').offset().top-50}, duration2);
+      return false;
+    })
+    //clicking on top bar button submit proposal button
+    jQuery('#proposal').click(function(event) {
+      //load marketo lightbox form
+      MktoForms2.loadForm("//app-sji.marketo.com", "105-RTY-982", 1182, function (form){MktoForms2.lightbox(form).show();});
+    })
 
-   jQuery('#overview1').click(function(event) {
-    event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv').offset().top-50}, duration2);
-    return false;
-   })
-
-   jQuery('#audience').click(function(event) {
-    event.preventDefault();
-    jQuery('html,body').animate({scrollTop:jQuery('#coloredBodyDiv2').offset().top-50}, duration2);
-    return false;
-   })
-   jQuery('#proposal').click(function(event) {
-     MktoForms2.loadForm("//app-sji.marketo.com", "105-RTY-982", 1182, function (form){MktoForms2.lightbox(form).show();});
-   })
-
-});
+  });
     
 </script>
  
 <!-- SYSTEM INCLUDES - DO NOT EDIT -->
 <?php echo $mContext['headElements']; ?>
 </head>
-<body id="bodyId" class="mktEditable" align="center" <?php echo $mContext['bodyAttributes'] ?>
-<div id="outerWrapDiv" class="mktEditable">
-<div class="headerWrapper">
 
-    <div class="header">
+<!--Start of body-->
+<body id="bodyId" class="mktEditable" align="center" <?php echo $mContext['bodyAttributes'] ?>
+  <!--Wrapper Div 100 percent size-->
+  <div id="outerWrapDiv" class="mktEditable">
+    <!--Header  Container-->
+    <div class="headerWrapper">
+      <!--Header div-->
+      <div class="header">
+        <!--Top of header div-->
         <div class="headerTop" style="height:3vw">
+          <!--table containing top buttons and logo-->
           <table style="height:2vw;width:100%;">
             <tbody>
+              <!--First row containing brightTALK logo, overview, audience, spacers and proposal--> 
               <tr>
+                <!--Container for logo image-->
                 <td style="background-color:#ffffff; width:10%">
-            <a href="https://www.brighttalk.com/" style="margin-left:10vw;" class="logo">
-                <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png"  style="height:2vw; max-height:25px" alt="BrightTALK">
-            </a>
+                  <!--link tag for BrightTALK image-->
+                  <a href="https://www.brighttalk.com/" style="margin-left:10vw;" class="logo">
+                    <!--BrightTALK logo image-->
+                    <img class="logoImage" src="https://www.brighttalk.com/bundles/brighttalklayout/images/logo-transparent-139x25.png" alt="BrightTALK">
+                  </a>
                 </td>
+                <!--Container for overview button-->
                 <td style="width:10%;"><a href="#" class="topBarButton" id="overview1"><strong>Overview</strong></a></td>
-                
+                <!--Container for Audience button-->
                 <td style="width:10%;"><a href="#" class="topBarButton" id="audience"><strong>Audience</strong></a></td>
+                <!--Spacers-->
                 <td id="spaces1" style="width:10%;"></td>
                 <td id="spaces1" style="width:10%;"></td>
+               <!--Submit Proposal at top bar button-->
                 <td style="width:15%;"><a href="#" class="topBarButton" id="proposal" style="padding: 0.25vw; display:none;"><strong>Submit Proposal</strong></a></td>
+                <!--Spacer-->
                 <td id="spaces1" style="width:10%;"></td>
               </tr>
             </tbody>
           </table>
+        <!--End of headerTop-->
         </div>
+      <!--End of header-->
+      </div>
+    <!--End of headerWrapper-->
     </div>
-</div>
-
-  <div id="innerWrapDiv" style="z-index:10;">
-
-<?php echo $mContext['bodyElements']; ?>
-
-
-
-
-<!-- START TEMPLATE HTML - EDIT THIS SECTION -->
-
-
-<div id="mktContent" class="mktEditable">
-<!-- Base of Landing Page Content -->
-
-
-<!--SIMBOLEDITS-->
-
-  <!--Floating call to action at the top of the page-->
+    
+    <!--div containing the rest of the landing page-->
+    <div id="innerWrapDiv">
+      <?php echo $mContext['bodyElements']; ?>
+      <!--Container containg all content on the page-->
+      <div id="mktContent" class="mktEditable">
+        <!-- Base of Landing Page Content -->
   <a href="#" class="back-to-top" id = "barButton">Submit Proposal</a>
 <div class="contain" id = "peers2" style="background-color:rgba(0,0,0,0.4); width:100%; padding-top: 5vw; padding-bottom: 5vw; margin:auto;">
   <!--Content Seciont of the page without footer and header-->
